@@ -30,3 +30,19 @@ function downloadJSON(){
     a.click();
     URL.revokeObjectURL(a.href);
 }
+function clearJSON(){
+    document.getElementById("jsonInput").value ="";
+    document.getElementById("jsonOutput").value = "";
+
+}
+
+function minifyJSON(){
+    try{
+        let data = getJSON("jsonInput");
+        let output = JSON.stringify(data);
+        document.getElementById('jsonOutput').value=output;
+        document.getElementById("formatStatus").innerHTML=`<span class="good" > Minified Sucessfully</span>`; 
+    }catch(e){
+        document.getElementById("formatStatus").innerHTML=`<span>${e.message}</span>`;
+    }
+}
