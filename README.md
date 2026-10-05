@@ -39,7 +39,9 @@ Chellenges:- I have only started coding so i dont know how to download files cod
 
 First clone my repo to your local folder by using this command.
  
-```sh git clone https://github.com/dev-l-k/JSON-ToolKit.git ```
+```sh
+git clone https://github.com/dev-l-k/JSON-ToolKit.git
+```
 
 Then directly open the `index.html` in your browser.
 
