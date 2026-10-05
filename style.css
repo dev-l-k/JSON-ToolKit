@@ -14,3 +14,32 @@ header{
     text-align:center;
     border-bottom: 1px solid #30363d;
 }
+h1{
+    margin:0;
+    font-size: 26px;
+}
+header p{
+    margin:5px 0 0;
+    color:lightgrey;
+}
+main{
+    max-width: 1100px;
+    margin:auto;
+    padding:15px;
+
+}
+.tool{
+    display:block;
+}
+textarea{
+    width:100%;
+    min-height: 300px;
+    background: #222;
+    color:whitesmoke;
+    border:1px solid #333;
+    border-radius: 10px;
+    padding:14px;
+    font-size: 14px;
+    font-family: monospace;
+    resize:vertical;
+}
