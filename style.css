@@ -1,0 +1,16 @@
+*{
+    box-sizing:border-box;
+
+}
+body{
+    margin:0;
+    font-family: system-ui;
+    background:#0d1117;
+    color:#e6edf3;
+
+}
+header{
+    padding:18px;
+    text-align:center;
+    border-bottom: 1px solid #30363d;
+}
