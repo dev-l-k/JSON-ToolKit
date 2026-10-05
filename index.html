@@ -11,10 +11,10 @@
         <h1>JSON ToolKit</h1>
         <p>Format Minify Convert JSON</p>
     </header>
-    
+    <main>
     <section id="format" class="tool">
         <h2>JSON FORMATTER</h2>
-        <textarea id="jsoninput" placeholder="Paste JSON code here...."></textarea>
+        <textarea id="jsonInput" placeholder="Paste JSON code here...."></textarea>
         <div class="actions">
             <button class="btn" onclick="formatJSON()">Format</button>
             <button class="btn" onclick="minifyJSON()">Minify</button>
@@ -23,9 +23,10 @@
             <button class="btn" onclick="clearJSON()">Clear</button>
         </div>
 
-        <div class="formatStatus" class="status">Ready</div>
+        <div id="formatStatus" class="status">Ready</div>
         <textarea id="jsonOutput" placeholder="Output will appear here..."></textarea>
     </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
