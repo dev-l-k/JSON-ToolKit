@@ -15,7 +15,18 @@ function formatJSON(){
 function loadDemo(){
     document.getElementById('jsonInput').value = `{"name":"Alex Rivera","age":29,"isDeveloper":true,"skills":["JavaScript","HTML","CSS"],"address":{"city":"Bengaluru","postalCode":"560001"},"projects":[{"id":101,"title":"JSON ToolKit","active":true},{"id":102,"title":"CLI Parser","active":false}],"notes":null}`;
 }
-function copyOutput(){
+async function copyOutput(){
     const text = document.getElementById('jsonOutput').value;
     await navigator.clipboard.writeText(text);
+    alert("Output copied to clipboard..")
+}
+function downloadJSON(){
+    let text = document.getElementById("jsonOutput").value;
+    if(!text)return;
+    let blob = new Blob([text],{type:"application/json"});
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "data.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
 }
